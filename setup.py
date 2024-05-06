@@ -12,7 +12,7 @@ classifiers = [
 with open("README.md") as f:
     long_description = f.read()
 
-with open("requirements.doc.txt") as f:
+with open("requirements.docs.txt") as f:
     requirements = f.readlines()
 install_requires = [r.strip() for r in requirements]
 
