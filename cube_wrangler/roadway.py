@@ -161,9 +161,11 @@ class ModelRoadwayNetwork(RoadwayNetwork):
         )
         temp_links_gdf[network_variable] = temp_links_gdf.geometry.length / 1609.34
         # overwrite 0 distance with 0.001 mile
-        temp_links_gdf.loc[
-            temp_links_gdf[network_variable] == 0, network_variable
-        ] = 0.001
+        temp_links_gdf[network_variable] = np.where(
+            temp_links_gdf[network_variable] == 0,
+            0.001,
+            temp_links_gdf[network_variable],
+        )
 
         self.links_df[network_variable] = temp_links_gdf[network_variable]
 
