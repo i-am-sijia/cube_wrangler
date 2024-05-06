@@ -131,7 +131,7 @@ dependencies:
     - attrs==20.3.0
     - babel==2.9.1
     - backcall==0.2.0
-    - black==21.9b0
+    - black==23.3.0
     - bleach==4.1.0
     - cchardet==2.1.7
     - colorama==0.4.4
