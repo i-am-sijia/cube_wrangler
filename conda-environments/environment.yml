@@ -13,7 +13,7 @@ dependencies:
   - cffi=1.14.6
   - cfitsio=3.470
   - chardet=4.0.0
-  - click=7.1.2
+  - click=8.1.7
   - click-plugins=1.1.1
   - cligj=0.7.2
   - cryptography=3.4.8
@@ -173,7 +173,7 @@ dependencies:
     - nest-asyncio==1.5.1
     - notebook==6.4.4
     - osmnx==0.14.1
-    - packaging==21.0
+    - packaging==24.0
     - pandocfilters==1.5.0
     - parso==0.8.2
     - partridge==1.1.1
